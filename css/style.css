@@ -212,9 +212,9 @@ a {
 
 /*Gallery*/
 #gallery {
-  width: 90%;
-  margin: auto;
+  width: 100%;
   padding: 50px;
+  margin: auto;
 }
 
 #gallery-container {
@@ -229,6 +229,12 @@ a {
   width: 540px;
   height: 360px;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+  #gallery-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /*Footer*/
